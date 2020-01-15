@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>构造函数模式与原型模式结合使用批量创建对象</title>
+    <script>
+
+        // 将每个对象特有的属性和方法放到构造函数中，将公有的属性和方法放到原型对象中
+        // 将属性放到构造函数中，将方法放到原型对象中
+        function Person(name, age, gender) {
+            this.name = name;
+            this.age = age;
+            this.gender = gender;
+            this.friends = [];
+        }
+
+        Person.prototype.sayName = function () {
+            console.log(this.name);
+        }
+
+        var person1 = new Person('张三', 12, '男');
+        var person2 = new Person('李四', 10, '男');
+
+        console.log(person1, person2);
+        person1.sayName();
+        person2.sayName();
+        person1.friends.push('tom');
+        person2.friends.push('mary');
+        console.log(person1.friends);
+        console.log(person2.friends);
+
+        console.log(person1.sayName() === person2.sayName());
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

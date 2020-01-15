@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+
+        /*var arr = new Array();
+        var arr = new Array(10);
+        var arr = new Array('10');
+        var arr = new Array(10, 20);
+        console.log(arr);*/
+
+        /*var arr = [];
+        var arr = [1, 2, 3];
+        var arr = [1, 2, 3, 'hello', true, {name: '张三'}, function () {console.log(7)}];
+        console.log(arr);
+        arr[6]();*/
+
+        /*var arr = [3, 'hello'];
+        console.log(arr);
+        console.log(arr.length);
+        arr.length = 6;
+        console.log(arr);
+        console.log(arr.length);
+        arr.length = 1;
+        console.log(arr);
+        console.log(arr.length);
+        arr[5] = true;
+        console.log(arr);
+        console.log(arr.length);*/
+
+        /*var arr = [3, 'hello'];
+        console.log(arr[5]);
+        console.log(arr.length);
+        console.log(Array.isArray(arr));*/
+
+        /*function test() {
+            console.log(Array.isArray(arguments));//arguments只是一个类数组对象
+        }
+        test();*/
+
+        /*var arr = [1, 2, 3, 'hello'];
+        console.log(arr.toString());
+        console.log(arr.join('||'));
+
+        console.log(arr.join('&').split('&'));*/
+
+        /*var arr = [1, 2, 3, 'hello'];
+        console.log(arr);
+        console.log(arr.pop());// 从数组末尾获取元素，返回值是元素,元素组的长度减1
+        console.log(arr);
+        console.log(arr.push('tom'));
+        console.log(arr);
+        console.log(arr.shift());// 从数组头部获取元素
+        console.log(arr);
+        console.log(arr.unshift('mary'));
+        console.log(arr);*/
+
+        /*var arr = [1, 2, 3, 'hello'];
+        console.log(arr);
+        console.log(arr.reverse());// 反转数组
+        console.log(arr.sort(compare));//对数组的每个元素使用toString()再进行排序
+
+        function compare(a, b) {
+            if (a < b) {
+                return -1;
+            } else {
+                return 1;
+            }
+        }*/
+
+        /*var arr = [1, 2, 3, 'hello', 4, 5, 6, true, function(){}];
+        console.log('----concat----');
+        console.log(arr.length);
+        console.log(arr.concat('world', '张三'));
+        console.log(arr.length);
+
+        console.log('----slice----');
+
+        console.log(arr.length);
+        console.log(arr.slice(3));
+        console.log(arr.length);
+
+        console.log('----splice----');
+        console.log(arr.length);
+        // var result = arr.splice(3, 4);//开始删除的位置和项数
+        var result = arr.splice(3, 0, '111', '222', '333');//开始插入的位置，项数，插入的元素
+        console.log(arr);
+        console.log(result);*/
+
+        /*var arr = [1, 2, 3, 'hello', 4, 5, 6, true, function(){}];
+        console.log(arr.indexOf(4));
+        console.log(arr.indexOf(123));
+        console.log(arr.lastIndexOf(6));*/
+
+        /*var arr = [15, 22, 35, 65, 80, 85, 86, 45, 66, 10, 15, 8, 7];
+        // item:元素  index:索引  arr:数组
+        // 查找符合条件的元素，只要一个不符合条件就返回false
+        var result_every = arr.every(function (item, index, arr) {
+            return item >= 18;
+        });
+        console.log('result_every:', result_every);
+
+        // 查找符合条件的元素，只要一个符合条件就返回true
+        var result_somme = arr.some(function (item, index, arr) {
+            return item >= 18;
+        });
+        console.log('result_somme:', result_somme);
+
+        // 过滤出符合条件的元素
+        var result_filter = arr.filter(function (item, index, arr) {
+            return item >= 18;
+        });
+        console.log('result_filter:', result_filter);
+
+        // 用来映射属性或者计算之后返回
+        var result_map = arr.map(function (item, index, arr) {
+            return item * 2;
+        });
+        console.log('result_map:', result_map);
+
+        var person = [{
+            name: '张三',
+            age: 12
+        }, {
+            name: '李四',
+            age: 22
+        }, {
+            name: '王五',
+            age: 30
+        },];
+        var result_person = person.map(function (item, index, person) {
+            return item.name;
+        });
+        console.log(result_person);
+
+
+        // 遍历数组
+        person.forEach(function (item, index, person) {
+            console.log(item, index);
+        });*/
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

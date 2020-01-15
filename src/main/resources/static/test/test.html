@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        /*console.log(typeof undefined);
+        console.log(parseInt(' '));
+        console.log(123 && null && undefined);
+        console.log(Boolean("hello"));*/
+
+        console.log("---------------------------------");
+        /*var message = "hello", found = false, age = 29;
+        console.log(age);
+        var dog = {name: 'Spot', breed: 'Dalmatian'};
+        console.log(dog);
+        var myNameArray = ['Chris', 'Bob', 'Jim'];
+        console.log(myNameArray);
+        var min = Number.MIN_VALUE;
+        var max = Number.MAX_VALUE;
+        console.log(min, max);
+        console.log("kja\tdkja\thheo\twuhq\tiuhwue\tqjhoi");
+        var arr = "jhsajljlakzuhjasndkuiuhjnasd";
+        console.log(arr.length);
+        console.log(+arr);*/
+
+        var obj = {
+            name: '张三',
+            age: 12,
+            gender: '男',
+            sayName: function () {
+                return 2;
+            }
+        };
+
+        console.log(obj);
+
+        /*console.log(obj.name);
+        console.log(obj.sayName);
+        console.log(obj.sayName());
+        console.log('--------------------------');
+        console.log(obj['name']);
+        var gender = 'gender';
+        console.log(obj[gender]);*/
+
+        //for-in
+        /*for (var key in obj) {
+            // key就是属性名
+            console.log(key);
+            console.log(obj[key]);
+        }*/
+
+        // in 用来检测属性是否在对象中
+        /*console.log('valueOf' in obj);
+        console.log('toString' in obj);
+        console.log('name' in obj);
+        console.log('key' in obj);
+        // hasOwnProperty() 检测是不是对象自己声明的属性
+        console.log(obj.hasOwnProperty('name'));
+        console.log(obj.hasOwnProperty('toString'));*/
+
+        /*console.log(obj.constructor);*/
+
+        /*var date = new Date();
+        console.log(date);
+        console.log(date.toString());
+        console.log(date.toLocaleString());
+        console.log(date.getFullYear(), date.getMonth() + 1, date.getDate());
+        console.log(date.getDay());
+        console.log(date.getHours(), date.getMinutes(), date.getSeconds());*/
+
+        var jsonObj = {
+            name: '李四',
+            age: 12
+        };
+        console.log(jsonObj);
+        // 将js对象转换成刚json字符串
+        var str = JSON.stringify(jsonObj);
+        console.log(str);
+
+        //将json字符串转换成js对象
+        var str = '{"name":"李四","age":12}';
+        console.log(JSON.parse(str));
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

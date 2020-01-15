@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+
+        // 将创建对象的过程封装成函数
+        /*function createPerson(name, age, gender) {
+            var obj = {};
+            obj.name = name;
+            obj.age = age;
+            obj.gender = gender;
+            return obj;
+        }
+
+        var obj1 = createPerson('张三', 12, '男');
+        var obj2 = createPerson('李四', 24, '女');
+        var obj3 = createPerson('王五', 30, '男');
+
+        console.log(obj1, obj2, obj3);*/
+
+        function createDog(name, age) {
+            return {
+                name: name,
+                age: age
+            };
+        }
+
+        var dog1 = createDog('小黑', 8);
+        var dog2 = createDog('可乐', 10);
+
+        console.log(dog1, dog2);
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>
